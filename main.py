@@ -327,7 +327,7 @@ try:
    
     except Exception as error:
         LOGGER.error(f'Error: {error}')  # Log the error
-        await m.reply(
+        await ctx.reply(
             (
                 '**'
                 f'Error: {error}'
@@ -336,4 +336,4 @@ try:
             quote=True
         )
 
-bot.run()
+bot.run('YOUR_BOT_TOKEN')
